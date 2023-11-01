@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator with Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input v-model="input1" type="text" placeholder="Masukkan angka pertama">
+        <input v-model="input2" type="text" placeholder="Masukkan angka kedua">
+        <div>
+            <button @click="calculate('+')">+</button>
+            <button @click="calculate('-')">-</button>
+            <button @click="calculate('*')">x</button>
+            <button @click="calculate('/')">/</button>
+        </div>
+        <div>
+            Hasil: {{ result }}
+        </div>
+    </div>
+
+    <script src="Calculator.js"></script>
+</body>
+</html>
